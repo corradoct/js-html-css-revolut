@@ -27,10 +27,12 @@ a {
 
 /* REGOLE NAV */
 .wrapperNav {
-  height: 150px;
+  height: 100px;
   width: 100%;
-  line-height: 150px;
   padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav ul li a {
   color: rgb(139, 149, 158);
@@ -58,7 +60,7 @@ nav ul li a:hover {
 }
 .navFloatRight ul.dropdown {
   position: absolute;
-  top: 100px;
+  top: 40px;
   left: -40px;
   width: 150px;
   text-align: center;
