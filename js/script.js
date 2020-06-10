@@ -4,7 +4,7 @@ $(document).ready(
     $('.withDropdown').mouseenter(
       function() {
         $(this).children('.dropdown').addClass('displayFlex');
-        if ($('i').hasClass('fa-angle-down')) {
+        if ($(this).find('i').hasClass('fa-angle-down')) {
           $('i').removeClass('fa-angle-down');
           $('i').addClass('fa-angle-up');
         }
@@ -14,7 +14,7 @@ $(document).ready(
     $('.withDropdown').mouseleave(
       function() {
         $(this).children('.dropdown').removeClass('displayFlex');
-        if ($('i').hasClass('fa-angle-up')) {
+        if ($(this).find('i').hasClass('fa-angle-up')) {
           $('i').removeClass('fa-angle-up');
           $('i').addClass('fa-angle-down');
         }
@@ -24,7 +24,7 @@ $(document).ready(
     $('.withDropdown').click(
       function() {
         $(this).children('.dropdown').removeClass('displayFlex');
-        if ($('i').hasClass('fa-angle-up')) {
+        if ($(this).find('i').hasClass('fa-angle-up')) {
           $('i').removeClass('fa-angle-up');
           $('i').addClass('fa-angle-down');
         }
