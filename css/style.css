@@ -1,0 +1,22 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;               /*DA CANCELLARE SE SI USA UN FRAMEWORK*/
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* FINE REGOLE GENERALI */
+
+
+/* REGOLE HEADER */
+
+/* FINE REGOLE HEADER */
+
+/* REGOLE NAV */
+
+/* FINE REGOLE NAV */
