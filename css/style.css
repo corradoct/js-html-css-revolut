@@ -23,6 +23,13 @@ ul li {
 a {
   text-decoration: none;
 }
+.displayNone {
+  display: none;
+}
+.displayFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* FINE REGOLE GENERALI */
 
 /* REGOLE NAV */
@@ -60,19 +67,10 @@ nav ul li a:hover {
 }
 .navFloatRight ul.dropdown {
   position: absolute;
-  top: 40px;
+  top: 22px;
   left: -40px;
   width: 150px;
   text-align: center;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-.displayNone {
-  display: none;
-}
-.displayFlex {
-  display: flex;
-  flex-wrap: wrap;
 }
 .navFloatRight ul.dropdown li {
   flex-basis: 150px;
