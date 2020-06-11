@@ -20,15 +20,23 @@ $(document).ready(
         }
       }
     )
-    // Quando clicco sugli li chiudo il menù a tendina e inverto la freccia dell'li delle lingue.
-    $('.withDropdown').click(
+    // Quando clicco sugli li chiudo e apro il menù a tendina.
+    $(document).on('click', '.withDropdown',
       function() {
-        $(this).children('.dropdown').removeClass('displayFlex');
+        $(this).children('.dropdown').toggleClass('displayFlex');
+      }
+    )
+    // Quando clicco sull'li della lingua inverto la fraccia
+    $(document).on('click', '.withDropdown.lang',
+      function() {
         if ($(this).find('i').hasClass('fa-angle-up')) {
           $('i').removeClass('fa-angle-up');
           $('i').addClass('fa-angle-down');
+        } else {
+          $('i').removeClass('fa-angle-down');
+          $('i').addClass('fa-angle-up');
         }
       }
-    )
+    );
   }
 );

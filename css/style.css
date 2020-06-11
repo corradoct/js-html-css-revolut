@@ -34,10 +34,11 @@ a {
 
 /* REGOLE NAV */
 .wrapperNav {
-  height: 100px;
+  height: 50px;
   width: 100%;
   padding: 0 100px;
-  line-height: 100px;
+  line-height: 50px;
+  margin: 20px 0;
 }
 nav ul li a {
   color: rgb(139, 149, 158);
@@ -65,10 +66,9 @@ nav ul li a:hover {
 }
 .navFloatRight ul.dropdown {
   position: absolute;
-  top: 80px;
-  left: -40px;
-  width: 150px;
-  text-align: center;
+  top: 50px;
+  left: -20px;
+  white-space: nowrap;
   box-shadow:2px 2px 5px #808080;
 }
 .navFloatRight ul.dropdown.lang {
@@ -77,7 +77,15 @@ nav ul li a:hover {
 }
 .navFloatRight ul.dropdown li {
   line-height: 18px;
-  margin: 15px 0;
+  margin: 0;
+  padding: 15px;
+  display: block;
+}
+.navFloatRight ul.dropdown li span {
+  color: #eb008d;
+  font-size: 10px;
+  position: relative;
+  top: -10px;
 }
 .navFloatRight ul li a.download {
   background-color: #eb008d;
@@ -96,6 +104,9 @@ nav ul li a:hover {
 i.little {
   font-size: 10px;
   color: rgb(139, 149, 158);
+}
+.active {
+  color: #000;
 }
 
 /* FINE REGOLE NAV */
